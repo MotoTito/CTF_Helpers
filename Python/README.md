@@ -22,3 +22,19 @@ binaryRep = ConvertFormats(input, Formats.ASCII, Formats.ASCII_BINARY)
 asciiRep = ConvertFormats(binaryRep, Formats.ASCII_BINARY, Formats.ASCII)
 # asciiRep -> "ABCD"
 ```
+
+### keyboardPlayback
+Takes a string variable and replays it keystroke by keystroke. Written if there is a VM or window that you cannot copy into. Allows you to write your string/code and then click on the input and have simulated keyboard inputs copy the string over for you. From when you click run it will wait 3 seconds before it starts typing. This can be set with the `waitseconds` parameter. It isn't very quick, but is functional. Requires [keyboard](https://pypi.org/project/keyboard/) to be imported from pypi.
+
+```
+test = """
+This is my multiline string
+With lines
+"""
+
+timeToWait = 5
+
+#Will wait 5 seconds before it starts typing the string.
+ReplayString(test, timeToWait)
+
+```
