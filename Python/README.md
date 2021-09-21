@@ -1,7 +1,7 @@
 # Python CTF Helper Scripts
 
 ## Description
-List of Python scripts with helpers to address random of CTF tasks encountered.
+List of Python scripts with helpers to address random CTF tasks encountered.
 
 ### swapFormats
 Takes a string in one format and swaps it into another format, for example takes an ASCII string "ABCD" and changes it to a string in its HEX representation "41424344". There is a `Formats` class with:
