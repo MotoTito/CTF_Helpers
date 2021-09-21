@@ -38,3 +38,6 @@ timeToWait = 5
 ReplayString(test, timeToWait)
 
 ```
+
+### basicNetClient
+A basic network client that connects to a server and processes the response and replies. For example, a CTF puzzle where the server would send an equation such as `-72*3+900/345=?` and the response had to be within seconds. The server message would be passed to `GenerateResponse` where it would be parsed and a reply sent back to the server, and it would loop until an unexpected response would appear.
